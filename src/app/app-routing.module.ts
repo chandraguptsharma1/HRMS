@@ -3,14 +3,19 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'leave',
+    loadChildren: () => import('./leave management system/leave/leave.module').then( m => m.LeavePageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'leave',
     pathMatch: 'full'
   },
+  {
+    path: 'add-leave',
+    loadChildren: () => import('./leave management system/add-leave/add-leave.module').then( m => m.AddLeavePageModule)
+  },
+ 
 ];
 
 @NgModule({
