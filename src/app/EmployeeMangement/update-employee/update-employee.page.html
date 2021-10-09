@@ -1,0 +1,53 @@
+<ion-header >
+  <ion-toolbar >
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="../../../assets/loginLogo.png" style="height: 50px;margin-left: 80px;">
+        </ion-col>
+        <ion-col style="margin-top: 13px;font-size: larger;font-weight: 700;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-left: -120px;" >
+          <h1 class="ion-no-margin">Employee Update </h1>
+        </ion-col>
+        
+      </ion-row>
+    </ion-grid>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div style="margin-left:15px ;">  
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">{{employee.EmpName}}</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+       <ion-item>
+         <ion-label position="floating">{{employee.EmpAddress}}</ion-label>
+         <ion-input></ion-input>
+       </ion-item>
+       <ion-item>
+        <ion-label position="floating">Enter EmailId</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+       <ion-item>
+         <ion-label position="floating">{{employee.MobNo}}</ion-label>
+         <ion-input></ion-input>
+       </ion-item>
+         <ion-item>
+           <ion-label>Gender</ion-label>
+           <ion-select placeholder="Select One">
+             <ion-select-option value="f">Male</ion-select-option>
+             <ion-select-option value="m">Female</ion-select-option>
+           </ion-select>
+         </ion-item>
+         <ion-item>
+          <ion-label>{{employee.JoinDate}}</ion-label>
+          <!-- <ion-datetime displayFormat="MM DD YY" placeholder="Select Date"></ion-datetime> -->
+          <!-- <ion-calendar [format]="'YYYY-MM-DD'"></ion-calendar> -->
+        </ion-item>
+        <ion-button expand="block">Edit</ion-button>
+      </ion-card-content>
+    </div>
+  </ion-card>
+</ion-content>

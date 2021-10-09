@@ -1,0 +1,30 @@
+
+<ion-content padding  style="background-image: url('../../../assets/logoBackground.png');">
+  <div style="text-align: center; margin-top: 120px;">
+    <img src="../../../assets/loginLogo.png" style="height:250px ;">
+  </div>
+ <form>
+  <div style="text-align: center;margin-top: 20px;" id="container">
+    <ion-list>
+      <ion-item id="rounded">
+        <ion-label position="floating" type="text" name="empId" [(ngModel)]="postData.empId">Emp Id</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item id="rounded">
+        <ion-label position="floating" type="Password" name="password" [(ngModel)]="postData.password">Password</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-list>    
+  </div>
+  <div>
+    <h5 style="margin-left: 60px;margin-top: -2px;color: grey;" routerLink="/forget-password">Forget Password</h5>
+  </div>
+
+  <div style="text-align: center;">
+    <ion-button share="round" color="success" (click)="loginAction()">
+      Login
+    </ion-button>
+  </div>
+ </form>
+  
+</ion-content>
